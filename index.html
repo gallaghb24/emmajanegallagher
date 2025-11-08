@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emma Jane Gallagher | The Relatable Mum</title>
+    <meta name="description" content="Emma Jane Gallagher - Content Creator sharing authentic motherhood moments on Instagram">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #FFF8F0 0%, #FFE8E0 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* Subtle decorative background pattern */
+        body::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(circle, rgba(232, 155, 147, 0.06) 1px, transparent 1px);
+            background-size: 30px 30px;
+            z-index: 0;
+        }
+        
+        /* Decorative circles */
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.08;
+            z-index: 0;
+        }
+        
+        .circle1 {
+            width: 400px;
+            height: 400px;
+            background: #E89B93;
+            top: -150px;
+            right: -100px;
+        }
+        
+        .circle2 {
+            width: 300px;
+            height: 300px;
+            background: #FFBB9A;
+            bottom: -100px;
+            left: -80px;
+        }
+        
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 60px 40px;
+            border-radius: 24px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            backdrop-filter: blur(10px);
+        }
+        
+        h1 {
+            font-size: 42px;
+            font-weight: 700;
+            color: #2D2823;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+            line-height: 1.2;
+        }
+        
+        .subtitle {
+            font-size: 24px;
+            color: #E89B93;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        
+        .tagline {
+            font-size: 16px;
+            color: #6B5F5F;
+            margin-bottom: 40px;
+            line-height: 1.5;
+        }
+        
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-top: 40px;
+        }
+        
+        .link-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 18px 32px;
+            border-radius: 14px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .link-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            transition: left 0.3s ease;
+        }
+        
+        .link-button:hover::before {
+            left: 100%;
+        }
+        
+        .instagram {
+            background: linear-gradient(135deg, #E89B93 0%, #FF8B7E 100%);
+            color: white;
+            box-shadow: 0 6px 20px rgba(232, 155, 147, 0.3);
+        }
+        
+        .instagram:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(232, 155, 147, 0.4);
+        }
+        
+        .email {
+            background: white;
+            color: #2D2823;
+            border: 2px solid #E89B93;
+        }
+        
+        .email:hover {
+            background: #FFF8F0;
+            transform: translateY(-2px);
+        }
+        
+        .icon {
+            font-size: 20px;
+        }
+        
+        .heart {
+            font-size: 20px;
+            margin: 0 4px;
+            animation: pulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        
+        footer {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(232, 155, 147, 0.2);
+            font-size: 14px;
+            color: #9B8585;
+        }
+        
+        @media (max-width: 640px) {
+            .container {
+                padding: 40px 24px;
+            }
+            
+            h1 {
+                font-size: 32px;
+            }
+            
+            .subtitle {
+                font-size: 20px;
+            }
+            
+            .tagline {
+                font-size: 15px;
+            }
+            
+            .link-button {
+                padding: 16px 24px;
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="circle circle1"></div>
+    <div class="circle circle2"></div>
+    
+    <div class="container">
+        <h1>Emma Jane Gallagher</h1>
+        <div class="subtitle">The Relatable Mum <span class="heart">🤍</span></div>
+        <p class="tagline">Content Creator<br>Sharing the beautiful chaos of life with two under two</p>
+        
+        <div class="links">
+            <a href="https://www.instagram.com/emmajane_gallagher/" target="_blank" rel="noopener noreferrer" class="link-button instagram">
+                <span class="icon">📱</span>
+                <span>Follow me on Instagram</span>
+            </a>
+            
+            <a href="mailto:socials@emmajanegallagher.com" class="link-button email">
+                <span class="icon">💌</span>
+                <span>Business Enquiries</span>
+            </a>
+        </div>
+        
+        <footer>
+            Essex, UK • Authentic motherhood content
+        </footer>
+    </div>
+</body>
+</html>
